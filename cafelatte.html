@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I LOVE COFFEE☕</title>
+    <style>
+      body {
+        background-color: #f3bc77;
+      }
+      img {
+        max-width: 100%;
+      }
+      .container {
+        text-align: center;
+        max-width: 450px;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #a55233;
+      }
+      p{font-size: larger;}
+
+      button {
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+        border-radius: 5px;
+        padding: 10px 15px;
+        background: #f3bc77;
+        color: black;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        cursor: pointer;
+        background: #a55233;
+        color: white;
+      }
+      .theme {
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+        border-radius: 5px;
+        padding: 10px 15px;
+        transition: all 200ms ease-in-out;
+        background: white;
+        color: black;
+      }
+      .theme:hover {
+        cursor: pointer;
+        color: white;
+        background: black;
+      }
+      footer {
+        text-align: center;
+      }
+      .more {transition: all 200ms ease-in-out;
+    text-decoration: none;}
+      .more:hover{cursor: pointer;}
+      .recipe-image{border-radius: 6px;
+    transition: transform 150ms ease-in-out, filter 200ms ease-in;}
+    .recipe-image:hover{filter: contrast(70%);
+    transform: scale(1.2);}
+    .grid {margin: 20px auto;
+        display:grid ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-gap: 10px;}
+.grid img {width: 100%;
+border-radius: 6px;
+object-fit: cover;
+transition: all 200ms ease-in-out;}
+.grid img:hover{transform: scale(2);}
+.dark {color: white;
+background-color: #402a23;}
+.dark .container{color: white;
+    background-color: #1d1716;
+}
+.dark a{color: purple;}
+
+
+
+    </style>
+  </head>
+  <body>
+    <button class="theme">Dark theme</button>
+    <div class="container">
+      <h1>Cafe Latte</h1>
+      <h2>Make me a cup!</h2>
+      <a href="https://athome.starbucks.com/recipe/caffe-latte">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/172/original/9ff809d4ce54f3028be1771c0ad5f169.jpg?1718474412"
+     class="recipe-image" />
+      </a>
+
+      <div class= "grid"> 
+         <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/177/original/1686914307_en-idei-club-p-coffee-latte-dizain-instagram-30.jpg?1718474529"
+      />
+        
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/179/original/beige-aesthetic-coffee-latte-and-cookies-d9lxa8um7teluut8.jpg?1718475046"
+      />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/180/original/tumblr_ac4fd9fa91e115e3c732484e994dfbe1_7f0e7b51_540.jpg?1718475067"
+      />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/181/original/f58b9815fcb966157032013e7ba4bf47.jpg?1718475081"
+      />
+       
+      </div>
+      <p>
+        First and foremost, we’re going to address the question of exactly what
+        a latte is. Basically, a latte is a coffee beverage based upon an
+        espresso, that is made with steamed milk and topped with foam milk which
+        is known by baristas as microfoam. The good thing about a latte is the
+        fact that you can add additional flavourings. These can range from
+        vanilla and hazelnut to even caramel. Why Is It Actually Called A Latte?
+        Okay, so now that we know what is a latte, lets dive into why is it
+        called a latte in the first place? Well, in English, the name ‘latte’ is
+        derived from the Italian word Caffellatte, which actually means ‘milk
+        coffee’. Remember, lattes are made with milk, rather than water, so in
+        reality, the name makes perfect sense.
+        <div 
+          ><a href="https://mobile-cuisine.com/did-you-know/latte-fun-facts/"
+            class="more">Find out more fun facts about Caffelatte.</a
+          ></div
+        >
+      </p>
+      <div class="grid">
+         <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/173/original/pexels-valeriia-miller-3361170.jpg?1718474429"
+      />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/214/original/latte.jpg?1718489679"
+      />
+     <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/178/original/images_%282%29.jpeg?1718475035"
+      />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/176/original/c24c91090f9f2eed5f4872fbfaf28452.jpg?1718474485"
+      />
+      
+      </div>
+      <button class="buttonCup">Make a cup☕</button>
+    </div>
+
+    <footer>Coded by Sibusisiwe Cumbi</footer>
+  </body>
+  <script>
+    function changeTheme() {
+        let body = document.querySelector("body");
+        body.classList.toggle("dark");
+    }
+    let theme = document.querySelector(".theme");
+    theme.addEventListener("click" , changeTheme);
+    function join(){let firstName = prompt("What is your name?");
+        let email = prompt("What's your email address?");
+        alert("Hello" + " "+ firstName+ ", expect to recieve the world's most amazing Caffe Latte recipe. Check your emails☕");
+       
+    }
+    let buttonCup = document.querySelector(".buttonCup");
+    buttonCup.addEventListener("click", join);
+  </script>
+</html>
